@@ -8,7 +8,7 @@ This project is made with CRA (Create React App) and it contains `Sass` support 
 
 ## How to use it
 
-You can use as few or as many components from this project into another project by viewing them and deciding which suits your project, then copy the component's file (which will contain two files, a `.jsx` & an `.scss`) to your project.  
+You can use as few or as many components from this project into another project by viewing them and deciding which suits your project, then copy the component's folder (which will contain two files, a `.jsx` & an `.scss`) to your project.  
 And with a little modification, the component of choice is ready for use.
 
 ## How to run the Storybook
@@ -21,4 +21,5 @@ npm run storybook
 
 ### Contributing
 
-Have a story? Let's have it heard. Forking it. Do what you do best. Create a pull-request.
+Have a story? Let's have it heard.  
+Fork. Do what you do best. Create a pull-request.
