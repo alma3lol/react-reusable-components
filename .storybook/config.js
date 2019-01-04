@@ -1,7 +1,13 @@
-import { configure } from '@storybook/react';
+import { addDecorator, configure } from '@storybook/react';
+import { withOptions } from '@storybook/addon-options';
+import { themes } from '@storybook/components';
 
-function loadStories() {
-  require('../src/stories');
-}
+addDecorator(
+  withOptions({
+    name: 'Dark Storybook',
+    theme: themes.dark,
+  })
+);
 
-configure(loadStories, module);
+
+configure(() => require('../src/stories'), module);
