@@ -6,6 +6,8 @@ import { linkTo } from '@storybook/addon-links';
 
 import { Button, Welcome } from '@storybook/react/demo';
 
+import { ButtonWithHover } from '../buttons/index';
+
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
 storiesOf('Button', module)
@@ -16,4 +18,8 @@ storiesOf('Button', module)
         😀 😎 👍 💯
       </span>
     </Button>
+  ));
+storiesOf('Button/With Hover', module)
+  .add('Green Hover', () => (
+    <ButtonWithHover text='Hover to see colors switch in Green' />
   ));
