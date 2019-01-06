@@ -1,0 +1,118 @@
+* {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+.welcome-rrc {
+    position: relative;
+    background: #171725;
+    color: #fff;
+    min-height: 375px;
+    max-height: 700px;
+    height: 100%;
+    padding: 15px;
+    display: grid;
+    grid-template-areas: "title title title" "sidebar main main" "sidebar main main";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: .5fr repeat(2, 1fr);
+    > * {
+        padding: 5px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+    > h1 {
+        text-align: center;
+        grid-area: title;
+        background: #31313d;
+        line-height: 2;
+    }
+    > .sidebar {
+        grid-area: sidebar;
+        > ul {
+            list-style-type: none;
+            > li {
+                cursor: pointer;
+                padding: 2.5px;
+                transition: .6s;
+                border-left: transparent 5px solid;
+                color: #64646e;
+                &.active {
+                    pointer-events: none;
+                    border-color: #fff;
+                    background: #31313d;
+                }
+                &:hover, &.active {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    > .main {
+        grid-area: main;
+        background: #31313d;
+        > *:not(.active) {
+            display: none;
+        }
+        > * {
+            height: 100%;
+            width: 100%;
+        }
+        > .intro {
+            > p {
+                > i {
+                    background: #969697;
+                    padding: 1px;
+                    border-radius: 2px;
+                    color: #171725;
+                }
+            }
+        }
+        > .intro, > .implementation {
+            > p {
+                > button {
+                    background: transparent;
+                    border: none;
+                    cursor: pointer;
+                    text-decoration: underline;
+                    font-weight: 900;
+                    &:hover {
+                        color: #969697;
+                    }
+                }
+            }
+        }
+        > .implementation, > .distributions {
+            > p {
+                > code {
+                    background: #64646e;
+                }
+                &.example {
+                    font-size: .8em;
+                }
+            }
+        }
+        > .what-new {
+            > h6 {
+                text-decoration: underline;
+            }
+            > p {
+                > ul {
+                    list-style: none;
+                    > li {
+                        font-size: .9em;
+                    }
+                }
+            }
+        }
+        > .distributions {
+            > p {
+                > a {
+                    color: #fff;
+                    &:hover {
+                        color: #969697;
+                    }
+                }
+            }
+        }
+    }
+}

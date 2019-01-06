@@ -1,3 +1,3 @@
-import ButtonWithHover from './ButtonWithHover/ButtonWithHover.jsx'
+import ButtonsWithHover from './withHover'
 
-export { ButtonWithHover };
+export { ButtonsWithHover };

@@ -1,0 +1,28 @@
+.green-hover-button {
+	transition: .8s;
+	color: #fff;
+	border: 1px #fff solid;
+	background: green;
+	border-radius: 5px;
+	height: 35px;
+	padding: 5px;
+	cursor: pointer;
+}
+.green-hover-button:hover {
+	background: linear-gradient(rgba(0, 128, 0, 0.1) .5%, green);
+	animation: green-hover-button-anim .2s linear 1;
+}
+@keyframes green-hover-button-anim {
+    0% {
+        background: linear-gradient(rgba(0, 128, 0, 0.1) 100%, green);
+    }
+    25% {
+        background: linear-gradient(rgba(0, 128, 0, 0.1) 75%, green);
+    }
+    50% {
+        background: linear-gradient(rgba(0, 128, 0, 0.1) 50%, green);
+    }
+    100% {
+        background: linear-gradient(rgba(0, 128, 0, 0.1) .5%, green);
+    }
+}
