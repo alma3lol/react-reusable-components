@@ -1,5 +1,5 @@
-import GreenHover from './GreenHover.jsx';
+import GreenHoverNavbar from './GreenHoverNavbar.jsx';
 
 export {
-    GreenHover
+    GreenHoverNavbar
 }

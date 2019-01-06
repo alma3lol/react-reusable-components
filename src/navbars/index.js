@@ -1,7 +1,7 @@
-import { GreenHover } from './withHover';
+import { GreenHoverNavbar } from './withHover';
 
 const Navbars = {
-    GreenHover
+    GreenHoverNavbar
 }
 
 export default Navbars;

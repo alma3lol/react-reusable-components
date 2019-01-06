@@ -1,7 +1,7 @@
-import GreenHover from './GreenHover';
+import GreenHoverButton from './GreenHoverButton';
 
 const ButtonsWithHover = {
-    GreenHover
+    GreenHoverButton
 }
 
 export default ButtonsWithHover;

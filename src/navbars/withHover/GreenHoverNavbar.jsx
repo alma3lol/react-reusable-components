@@ -1,7 +1,7 @@
 import React from 'react';
-import './GreenHover.scss';
+import './GreenHoverNavbar.scss';
 
-const GreenHover = ({ navs }) => (
+const GreenHoverNavbar = ({ navs }) => (
     <nav className='green-hover-navbar'>
         {
             (Object.keys(navs).map((nav, key) =>
@@ -11,4 +11,4 @@ const GreenHover = ({ navs }) => (
     </nav>
 )
 
-export default GreenHover;
+export default GreenHoverNavbar;

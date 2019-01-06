@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { Button } from '@storybook/react/demo';
 import { ButtonsWithHover } from '../buttons/index';
 
-const { GreenHover } = ButtonsWithHover;
+const { GreenHoverButton } = ButtonsWithHover;
 
 // storiesOf('Buttons', module)
 // .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
@@ -17,5 +17,5 @@ const { GreenHover } = ButtonsWithHover;
 // ));
 storiesOf('Buttons/With Hover', module)
 .add('Green Hover', () => (
-  <GreenHover text='Hover to see colors switch in Green' />
+  <GreenHoverButton text='Hover to see colors switch in Green' />
 ));

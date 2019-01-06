@@ -2,7 +2,7 @@ import React from "react";
 import { storiesOf } from '@storybook/react';
 import Navbars from '../navbars';
 
-const { GreenHover } = Navbars;
+const { GreenHoverNavbar } = Navbars;
 
 const navs = {
     '/':           'Home',
@@ -14,5 +14,5 @@ const navs = {
 
 storiesOf('Navbars/With Hover', module)
 .add('Green Hover', () => (
-    <GreenHover navs={navs} />
+    <GreenHoverNavbar navs={navs} />
 ));
